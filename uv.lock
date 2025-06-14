@@ -3,6 +3,15 @@ revision = 1
 requires-python = ">=3.12"
 
 [[package]]
+name = "absl-py"
+version = "2.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/03/15/18693af986560a5c3cc0b84a8046b536ffb2cdb536e03cce897f2759e284/absl_py-2.3.0.tar.gz", hash = "sha256:d96fda5c884f1b22178852f30ffa85766d50b99e00775ea626c23304f582fc4f", size = 116400 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/87/04/9d75e1d3bb4ab8ec67ff10919476ccdee06c098bcfcf3a352da5f985171d/absl_py-2.3.0-py3-none-any.whl", hash = "sha256:9824a48b654a306168f63e0d97714665f8490b8d89ec7bf2efc24bf67cf579b3", size = 135657 },
+]
+
+[[package]]
 name = "affine"
 version = "2.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -527,6 +536,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9", size = 190490 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3", size = 70442 },
+]
+
+[[package]]
+name = "immutabledict"
+version = "4.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e0/c5/4240186fbabc58fba41bbe17c5f0cd37ffd4c0b85a5029ab104f946df175/immutabledict-4.2.1.tar.gz", hash = "sha256:d91017248981c72eb66c8ff9834e99c2f53562346f23e7f51e7a5ebcf66a3bcc", size = 6228 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/59/56/25ca7b848164b7d93dbd5fc97dd7751700c93e324fe854afbeb562ee2f98/immutabledict-4.2.1-py3-none-any.whl", hash = "sha256:c56a26ced38c236f79e74af3ccce53772827cef5c3bce7cab33ff2060f756373", size = 4700 },
 ]
 
 [[package]]
@@ -1138,6 +1156,30 @@ wheels = [
 ]
 
 [[package]]
+name = "ortools"
+version = "9.13.4784"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "absl-py" },
+    { name = "immutabledict" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "protobuf" },
+    { name = "typing-extensions" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/32/52922d7c63e3c73670d80707ccedc46c584c3b99d08a5034eadcae1c2d6a/ortools-9.13.4784-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:81a22c9bb68c676e946eb8a00bc527adffb6610139493366d15ad46395554cf6", size = 25632093 },
+    { url = "https://files.pythonhosted.org/packages/21/0a/82ed3b941022dd3054c5468b24378a4e1089796c7e030523ee72803561a4/ortools-9.13.4784-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:30766e28085edf44181a68ffd2509c6b120d6b998a419bee5649b83086506c39", size = 27633788 },
+    { url = "https://files.pythonhosted.org/packages/41/9f/474d60127ad2e1ee45ad82e9d6f8a411650524841bbb7baa52a494b15d0e/ortools-9.13.4784-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:62fdf0b780f78cf73173a8283056930d099b47d179ac2216e24b4e7ea403c931", size = 29462133 },
+    { url = "https://files.pythonhosted.org/packages/47/1e/142ac7727425496407f4fdb187daa691f5a7617284354f84cc17a1d38063/ortools-9.13.4784-cp312-cp312-win_amd64.whl", hash = "sha256:9ead390bef76c71700b8274fa6f0be4ef71fa677fe1762d4ab7d211c0ed32f82", size = 20353630 },
+    { url = "https://files.pythonhosted.org/packages/5b/4b/2a9713c408f89d8c2cf8911a59aa25d2f86d6a586159f15909a9e512b968/ortools-9.13.4784-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:c0786c7e9ef7918a048bf2e20cf9504cc422cdfec122e737d46ac46f5432b44a", size = 25631177 },
+    { url = "https://files.pythonhosted.org/packages/48/f0/f24b987b350db98836020f69b37cf72a4ccd81f87acaffa3db9d4dcb00dd/ortools-9.13.4784-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:81edcd669ffe84976c29e8043ab9a470e1490f556ce5e4b0d033771cbee91ce4", size = 27633311 },
+    { url = "https://files.pythonhosted.org/packages/e0/11/cc85848020fedbfa9fb4d7b492defa117becda592de5498778c649bccf8e/ortools-9.13.4784-cp313-cp313-win_amd64.whl", hash = "sha256:7516e16613173460118e6ee670aae94dc795cdf178429698021398b7f9712b2e", size = 20372065 },
+    { url = "https://files.pythonhosted.org/packages/10/97/c9993222d55ecad69ee9154c3bf3e2ad06f957a8b06c2683727b6e5663ff/ortools-9.13.4784-cp313-cp313t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:4c3e7fe1ff029473172768cac38680c1558417ff17231092ebedb81766268936", size = 25671914 },
+    { url = "https://files.pythonhosted.org/packages/6e/f5/811cebe206553f22ebb1582fecd4cb0e8b1f66520921478714d7cb11cade/ortools-9.13.4784-cp313-cp313t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:dc10ca3116af619f766feccff963f4f1a506ab18e80eec6101a87c73d9f2079d", size = 27649396 },
+]
+
+[[package]]
 name = "osmnx"
 version = "2.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1305,6 +1347,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bb/6e/9d084c929dfe9e3bfe0c6a47e31f78a25c54627d64a66e884a8bf5474f1c/prompt_toolkit-3.0.51.tar.gz", hash = "sha256:931a162e3b27fc90c86f1b48bb1fb2c528c2761475e57c9c06de13311c7b54ed", size = 428940 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ce/4f/5249960887b1fbe561d9ff265496d170b55a735b76724f10ef19f9e40716/prompt_toolkit-3.0.51-py3-none-any.whl", hash = "sha256:52742911fde84e2d423e2f9a4cf1de7d7ac4e51958f648d9540e0fb8db077b07", size = 387810 },
+]
+
+[[package]]
+name = "protobuf"
+version = "6.31.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/52/f3/b9655a711b32c19720253f6f06326faf90580834e2e83f840472d752bc8b/protobuf-6.31.1.tar.gz", hash = "sha256:d8cac4c982f0b957a4dc73a80e2ea24fab08e679c0de9deb835f4a12d69aca9a", size = 441797 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f3/6f/6ab8e4bf962fd5570d3deaa2d5c38f0a363f57b4501047b5ebeb83ab1125/protobuf-6.31.1-cp310-abi3-win32.whl", hash = "sha256:7fa17d5a29c2e04b7d90e5e32388b8bfd0e7107cd8e616feef7ed3fa6bdab5c9", size = 423603 },
+    { url = "https://files.pythonhosted.org/packages/44/3a/b15c4347dd4bf3a1b0ee882f384623e2063bb5cf9fa9d57990a4f7df2fb6/protobuf-6.31.1-cp310-abi3-win_amd64.whl", hash = "sha256:426f59d2964864a1a366254fa703b8632dcec0790d8862d30034d8245e1cd447", size = 435283 },
+    { url = "https://files.pythonhosted.org/packages/6a/c9/b9689a2a250264a84e66c46d8862ba788ee7a641cdca39bccf64f59284b7/protobuf-6.31.1-cp39-abi3-macosx_10_9_universal2.whl", hash = "sha256:6f1227473dc43d44ed644425268eb7c2e488ae245d51c6866d19fe158e207402", size = 425604 },
+    { url = "https://files.pythonhosted.org/packages/76/a1/7a5a94032c83375e4fe7e7f56e3976ea6ac90c5e85fac8576409e25c39c3/protobuf-6.31.1-cp39-abi3-manylinux2014_aarch64.whl", hash = "sha256:a40fc12b84c154884d7d4c4ebd675d5b3b5283e155f324049ae396b95ddebc39", size = 322115 },
+    { url = "https://files.pythonhosted.org/packages/fa/b1/b59d405d64d31999244643d88c45c8241c58f17cc887e73bcb90602327f8/protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl", hash = "sha256:4ee898bf66f7a8b0bd21bce523814e6fbd8c6add948045ce958b73af7e8878c6", size = 321070 },
+    { url = "https://files.pythonhosted.org/packages/f7/af/ab3c51ab7507a7325e98ffe691d9495ee3d3aa5f589afad65ec920d39821/protobuf-6.31.1-py3-none-any.whl", hash = "sha256:720a6c7e6b77288b85063569baae8536671b39f15cc22037ec7045658d80489e", size = 168724 },
 ]
 
 [[package]]
@@ -1663,6 +1719,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "networkx" },
     { name = "openpyxl" },
+    { name = "ortools" },
     { name = "osmnx" },
     { name = "pandas" },
     { name = "pyarrow" },
@@ -1679,6 +1736,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.3" },
     { name = "networkx", specifier = ">=3.5" },
     { name = "openpyxl", specifier = ">=3.1.5" },
+    { name = "ortools", specifier = ">=9.13.4784" },
     { name = "osmnx", specifier = ">=2.0.3" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pyarrow", specifier = ">=20.0.0" },
