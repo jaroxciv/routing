@@ -1,6 +1,41 @@
-code/cache
-data
-notebooks
-outputs
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore all data, output, and notebook directories (but allow keeping their folders)
+data/
+outputs/
+notebooks/
+!data/.gitkeep
+!outputs/.gitkeep
+!notebooks/.gitkeep
+
+# Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Python bytecode/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Mac/Windows hidden files
+.DS_Store
+Thumbs.db
+
+# VSCode/PyCharm/IDE
+.vscode/
+.idea/
+
+# Logs and system files
+*.log
+
+# Lock files
+Pipfile.lock
+poetry.lock
+uv.lock
+
+# Misc
+*.bak
+*.swp
