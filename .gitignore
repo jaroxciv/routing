@@ -1,4 +1,6 @@
 code/cache
 data
+notebooks
+outputs
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
