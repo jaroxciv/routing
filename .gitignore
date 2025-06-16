@@ -39,3 +39,4 @@ uv.lock
 # Misc
 *.bak
 *.swp
+cache
